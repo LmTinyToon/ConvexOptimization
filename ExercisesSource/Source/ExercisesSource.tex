@@ -5,5 +5,33 @@
 
 \documentclass[a4paper, 12pt]{article}
 \begin{document}	
-Hello math world!
+TODO: (alex) think about proper decoration and styling of document!
+\section{Convex sets}
+%		Exercise 2.1 about convex set definition
+Exercise 2.1 
+
+Let $C \in R^n$ be a convex set, with $x_1, ..., x_k \in C$, and let $\theta_1, ..., 
+\theta_k \in R$ satisfy $\theta_i>=0$, $\theta_1 + ... + \theta_k = 1$. Show that $\theta_1 x_1 + 
+... + \theta_k x_k \in C$. (The definition of convexity is that this holds for $k = 2$; you must show it for arbitrary $k$.)
+
+Solution
+
+We will use mathematical induction to prove this statement
+
+1) Base case, where $n=2$. It is obvious by definition of convex set.
+
+2) Suppose, that statement is correct for any $n>=2$
+
+3) We will prove statement for $n+1$. Let $\theta_i i \in R, i \in 1,...,n+1$, 
+with $\theta_1 + ... + \theta_{n+1} = 1, \theta_i >= 0$. Also $x_i \in R^n$. Then we can use following fact (we suppose, that $\theta_{n+a} <> 1$): 
+$$\frac{\theta_1}{1-\theta_{n+1}} + ... + \frac{\theta_n}{1-\theta_{n+1}} = 1$$
+
+Note, that this fact will lead from initial requirement for $\theta_i$.  
+$$\theta_1 x_1 + ... + \theta_{n+1} x_{n+1} = 
+(1-\theta_{n+1})(\frac{\theta_1}{1 - \theta_{n+1}} x_1 + ... + \frac{\theta_n}{1 - \theta_{n+1}} x_n) + 
+\theta_{n+1} x_{n+1} = (1-\theta_{n+1}) x_c + \theta_{n+1} x_{n+1} \in C$$
+
+$x_c \in C due *$
+%		ex. end
+
 \end{document}
