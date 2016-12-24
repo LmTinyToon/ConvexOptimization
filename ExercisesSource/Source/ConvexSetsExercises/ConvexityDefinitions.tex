@@ -1,4 +1,4 @@
-%		Exercise 2.1 about convex set definition
+%		Exercise 2.1
 Exercise 2.1 Proof.
 
 We should prove generalization of convexity definition. We will use mathematical induction to prove this statement
@@ -17,4 +17,19 @@ $$\theta_1 x_1 + ... + \theta_{n+1} x_{n+1} =
 \theta_{n+1} x_{n+1} = (1-\theta_{n+1}) x_c + \theta_{n+1} x_{n+1} \in C$$
 
 $x_c \in C due *$
-%		ex. end
+%		Exercise 2.1 end
+
+%		Exercise 2.4
+Exercise 2.4 Proof
+
+We should prove that $conv C \subseteq \bigcup _{i=1}^{\infty} S_{i}$, where $C$ is any set, $S_{i}$
+is any convex set, containing $C$. And $conv C$ is convex hull of $C$.
+
+Note that statement $A = B$, where $A, B$ are any sets means that $A \subseteq B \subseteq A$. We will use this one for proof. Let $S = \bigcup _{i=1}^{\infty} S_{i}$.
+
+1) Prove that $conv C \subseteq S$. Suppose opposite. Let $\exists x_{0} \in conv C : x_{0} \notin S$.
+It means that $\exists \theta_1, \theta_2 \in R : \theta_i >= 0, \theta_1 + theta_2 = 1$ and $\exists x_1, x_2 \in C | x_1 \theta_1 + x_2 \theta_2 = x_0 \in conv C$. Set $S$ is convex and $C \subseteq S$. It yields that $\theta_1 x_1 + \theta_2 x_2 = x_0 \in S$. It is contradiction.
+
+2) Prove that $S \subseteq conv C$. Suppose opposite. Let $\exists x_0 \in S : x0 \notin conv C, x_0 \in S$. Thus $x0 \in S_i \forall i$. We know that $C \subseteq conv C$ and $conv C$ is convex. Hence $\exists j : S_j = conv C$ and $x_0 \in S_j = conv C$. It is contradiction.
+
+%		Exercise 2.4 end
