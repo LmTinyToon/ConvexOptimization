@@ -35,6 +35,19 @@ Let $\forall \theta_1, \theta_2 >=0, \sum{\theta_i}_{i=1}^{2} = 1$ and $\forall 
 We prove that $\theta_1 x_1 + \theta_2 x_2 = x_0 \in C$. Let line $L$ passes through points $x_1, x_2$. We know that $x_1, x_2 \in C$ and intersection of $L$ with $C$ is convex. Hence $\theta_1 x_1 + \theta_2 x_2 = x_0 \in I$. Thus $x_0 \in C$. 
 %		Exercise 2.2 end
 
+%		Exercise 2.3
+Exercise 2.3 Proof
+
+We suppose opposite. Let $C$ is midpoint convex and closed set, and $\exists \theta \in (0, 1), x_1, x_2 \in C : x_1 + \theta (x_2 - x_1) = x_0 \notin C$. Let ${s_i = [a_i, b_i]}_{i=0}^{\infty}$ is sequence of nested segments defined by following rules:
+
+1) $s_0 = [0, 1]$
+2) $\forall i \in N => s_i = [c_i, b_{i-1}] if c_i < \theta else
+[a_{i-1}, c_i]$, where $c_i = \frac{a_{i-1} + b_{i-1}}{2}$
+
+This sequence reproduces following sequence of points ${y_i = {a_i + b_i / 2}}_{i=0}^{\infty}$, where
+$\forall i => y_i \in C$. This sequence converges to $x_0$ element. It yields that $x_0 \in c$ because each element $y_i \in C$ and $C$ is closed set. It is contradiction.
+%		Exercise 2.3 end
+
 %		Exercise 2.4
 Exercise 2.4 Proof
 
